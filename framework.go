@@ -19,5 +19,11 @@
 		容器							  对象
 		镜像							  类
 
-	
+	概念								说明
+	docker镜像(Images)				docker镜像是用于创建docker容器的模板，比如Ubuntu系统。
+	docker容器(Container)				容器是独立运行的一个或一组应用，是镜像运行时的实体。
+	docker客户端(Client)			   docker客户端通过命令行或其他工具使用docker sdk(https://docs.docker.com/develop/sdk/) 与docker的守护进程通信
+	docker主机(Host)
+	docker registry
+	docker machine
 */
