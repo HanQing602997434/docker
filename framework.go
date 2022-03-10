@@ -19,16 +19,17 @@
 		容器							  对象
 		镜像							  类
 
-	概念								说明
-	docker镜像(Images)				docker镜像是用于创建docker容器的模板，比如Ubuntu系统。
-	docker容器(Container)				容器是独立运行的一个或一组应用，是镜像运行时的实体。
-	docker客户端(Client)			   docker客户端通过命令行或其他工具使用docker sdk(https://docs.docker.com/develop/sdk/) 与docker的守护进程通信。
-	docker主机(Host)					一个物理或虚拟的机器用于执行docker守护进程和容器。
-	docker registry					 docker仓库用来保存镜像，可以理解为代码控制中的代码仓库。
-									 docker hub(https://hub.docker.com) 提供了庞大的镜像集合供使用。
-									 一个docker registry中包括多个仓库(reponsitory)；每个仓库包括多个标签(tag)；
-									 每个标签对应一个镜像。
-									 通常，一个仓库会包含一个软件不同版本的镜像，而标签就常用于对应该软件的各个版本。
-									 我们可以通过标签来获取对应版本的镜像，如果没有标签，以lastest作为默认标签。
-	docker machine
+	概念							   说明
+	docker镜像(Images)			   docker镜像是用于创建docker容器的模板，比如Ubuntu系统。
+	docker容器(Container)			   容器是独立运行的一个或一组应用，是镜像运行时的实体。
+	docker客户端(Client)			  docker客户端通过命令行或其他工具使用docker sdk(https://docs.docker.com/develop/sdk/) 与docker的守护进程通信。
+	docker主机(Host)				   一个物理或虚拟的机器用于执行docker守护进程和容器。
+	docker registry					docker仓库用来保存镜像，可以理解为代码控制中的代码仓库。
+									docker hub(https://hub.docker.com) 提供了庞大的镜像集合供使用。
+									一个docker registry中包括多个仓库(reponsitory)；每个仓库包括多个标签(tag)；
+									每个标签对应一个镜像。
+									通常，一个仓库会包含一个软件不同版本的镜像，而标签就常用于对应该软件的各个版本。
+									我们可以通过标签来获取对应版本的镜像，如果没有标签，以lastest作为默认标签。
+	docker machine					docker machine是一个简化docker安装的命令行工具，通过一个简单的命令即可在相应的
+									平台安装docker，比如VirtualBox、Digital Ocean、Microsoft Azure。
 */
