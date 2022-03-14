@@ -58,5 +58,21 @@
 				$ sudo add-apt-repository \
    					"deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/ \
   					$(lsb_release -cs) \
-  					stable"
+					  stable"
+					  
+			安装Docker Engine-Community
+				更新apt包索引
+					$ sudo apt-get update
+
+				安装最新版本的Docker Engine-Community 和 contained，或者转到下一步安装特定版本：
+					$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+				要安装特定版本的Docker Engine-Community，请在仓库中列出可用版本，然后选择一种安装。列出您的仓库中可用的版本：
+					$ apt-cache madison docker-ce
+
+  					docker-ce | 5:18.09.1~3-0~ubuntu-xenial | https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu  xenial/stable amd64 Packages
+  					docker-ce | 5:18.09.0~3-0~ubuntu-xenial | https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu  xenial/stable amd64 Packages
+  					docker-ce | 18.06.1~ce~3-0~ubuntu       | https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu  xenial/stable amd64 Packages
+  					docker-ce | 18.06.0~ce~3-0~ubuntu       | https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu  xenial/stable amd64 Packages
+  					...
 */
