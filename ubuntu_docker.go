@@ -111,5 +111,9 @@
 					For more examples and ideas, visit:
 					https://docs.docker.com/get-started/
 						 
-		
+		使用Shell脚本进行安装
+			Docker在get.docker.com和test.docker.com上提供了方便脚本，用于将快速安装Docker Engine-Community
+			的边缘版本和测试版本。脚本的源代码在docker-install仓库中。不建议在生产环境中使用这些脚本，在使用之前
+			应该了解潜在的风险：
+				1.脚本需要运行root或者具有sudo特权。因此，在运行脚本之前，应仔细检查和审核脚本。
 */
