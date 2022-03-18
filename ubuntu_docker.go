@@ -126,4 +126,13 @@
 				4.该脚本未提供用于指定要安装哪个版本的Docker的选项。而是安装了在edge通道中发布的最新版本。
 
 				5.如果已使用其他机制将Docker安装在主机上，请不要使用便捷脚本。
+
+			本示例使用get.docker.com上的脚本在Linux上安装最新版本的Docker Engine-Community。要安装最新的测试版本，
+			请改用test.docker.com。
+			在下面的每个命令，取代每次出现get用test。
+				$ curl -fsSL https://get.docker.com -o get-docker.sh
+				$ sudo sh get-docker.sh
+
+			如果要使用Docker作为非root用户，则应考虑使用类似以下方式将用户添加到docker组：
+				$ sudo usermod -aG docker your-user
 */
