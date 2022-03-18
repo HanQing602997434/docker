@@ -135,4 +135,11 @@
 
 			如果要使用Docker作为非root用户，则应考虑使用类似以下方式将用户添加到docker组：
 				$ sudo usermod -aG docker your-user
+
+		卸载Docker
+			删除安装包
+				sudo apt-get purge docker-ce
+
+			删除镜像、容器、配置文件等内容：
+				sudo rm -rf /var/lib/docker
 */
