@@ -24,5 +24,17 @@
                   docker-latest \
                   docker-latest-logrotate \
                   docker-logrotate \
-                  docker-engine
+				  docker-engine
+				  
+	安装Docker Engine-Community
+	使用Docker仓库进行安装
+		在新主机上首次安装Docker Engine-Community之前，需要设置Docker仓库。之后，可以从仓库
+		安装和更新Docker。
+
+		设置仓库
+		安装所需的软件包。yum-utils提供了yum-config-manager，并且device mapper存储驱动程序需要
+		device-mapper-persistent-data 和 lvm2。
+			$ sudo yum install -y yum-utils \
+  			device-mapper-persistent-data \
+  			lvm2
 */
