@@ -36,5 +36,22 @@
 		device-mapper-persistent-data 和 lvm2。
 			$ sudo yum install -y yum-utils \
   			device-mapper-persistent-data \
-  			lvm2
+			  lvm2
+			  
+		使用以下命令来设置稳定的仓库
+		使用官方源地址（比较慢）
+			$ sudo yum-config-manager \
+    		--add-repo \
+			https://download.docker.com/linux/centos/docker-ce.repo
+			
+		可以选择国内的一些源地址
+			阿里云
+				$ sudo yum-config-manager \
+    			--add-repo \
+				http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+				
+			清华大学源
+				$ sudo yum-config-manager \
+    			--add-repo \
+   				https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/centos/docker-ce.repo
 */
