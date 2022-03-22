@@ -65,4 +65,17 @@
 			的安装或更新始终安装最高版本，这可能不适合您的稳定性需求。
 
 		Docker安装完默认未启动。并且已经创建好docker用户组，但该用户组下没有用户。
+
+	要安装特定版本的Docker Engine-Community，请在存储库中列出可用版本，然后选择并安装：
+		1.列出并排序您存储库中可用的版本。此示例按版本号（从高到低）对结果进行排序。
+			$ yum list docker-ce --showduplicates | sort -r
+
+			docker-ce.x86_64  3:18.09.1-3.el7                     docker-ce-stable
+			docker-ce.x86_64  3:18.09.0-3.el7                     docker-ce-stable
+			docker-ce.x86_64  18.06.1.ce-3.el7                    docker-ce-stable
+			docker-ce.x86_64  18.06.0.ce-3.el7                    docker-ce-stable
+
+		2.通过其完整的软件包名称安装特定版本，该软件包名称（docker-ce）加上版本字符串（第二列），从第一个
+		冒号（:）一直到第一个连字符，并用连字符（-）分隔。例如：docker-ce-18.09.1。
+			$ sudo yum install docker-ce-<VERSION_STRING> docker-ce-cli-<VERSION_STRING> containerd.io
 */
