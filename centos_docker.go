@@ -53,5 +53,16 @@
 			清华大学源
 				$ sudo yum-config-manager \
     			--add-repo \
-   				https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/centos/docker-ce.repo
+				   https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/centos/docker-ce.repo
+				   
+	安装 Docker Engine-Community
+		安装最新版本的Docker Engine-Community 和 contained，或者转到下一步安装特定版本：
+			$ sudo yum install docker-ce docker-ce-cli containerd.io
+
+		如果提示您接受GPG密码，请选是。
+			有多个Docker仓库吗？
+			如果启用了多个Docker仓库，则在未在yum install 或 yum update 命令中指定版本的情况下，进行
+			的安装或更新始终安装最高版本，这可能不适合您的稳定性需求。
+
+		Docker安装完默认未启动。并且已经创建好docker用户组，但该用户组下没有用户。
 */
