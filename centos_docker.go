@@ -78,4 +78,10 @@
 		2.通过其完整的软件包名称安装特定版本，该软件包名称（docker-ce）加上版本字符串（第二列），从第一个
 		冒号（:）一直到第一个连字符，并用连字符（-）分隔。例如：docker-ce-18.09.1。
 			$ sudo yum install docker-ce-<VERSION_STRING> docker-ce-cli-<VERSION_STRING> containerd.io
+
+	启动Docker
+		$ sudo systemctl start docker
+
+	通过运行hello-world 映像来验证是否正确安装了Docker Engine-Community。
+		$ sudo docker run hello-world
 */
