@@ -82,6 +82,13 @@
 	启动Docker
 		$ sudo systemctl start docker
 
-	通过运行hello-world 映像来验证是否正确安装了Docker Engine-Community。
-		$ sudo docker run hello-world
+		通过运行hello-world 映像来验证是否正确安装了Docker Engine-Community。
+			$ sudo docker run hello-world
+
+	卸载Docker
+		删除安装包
+			yum remove docker-ce
+
+		删除镜像、容器、配置文件等内容：
+			rm -rf /var/lib/docker
 */
