@@ -18,4 +18,9 @@
 
 	以上命令的完整意思可以解释为：Docker以ubuntu15.10镜像创建一个新容器，然后在容器里执行
 	bin/echo "Hello world"，然后输出结果。
+
+	进行交互式的容器
+		我们通过docker的两个参数-i -t，让docker运行的容器实现"对话"的能力：
+			runoob@runoob:~$ docker run -i -t ubuntu15.10 /bin/bash
+			root@0123ce188bd8:/#
 */
