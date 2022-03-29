@@ -23,4 +23,8 @@
 		我们通过docker的两个参数-i -t，让docker运行的容器实现"对话"的能力：
 			runoob@runoob:~$ docker run -i -t ubuntu15.10 /bin/bash
 			root@0123ce188bd8:/#
+
+		各个参数解析：
+			-t：在新容器内指定一个伪终端或终端。
+			-i：允许你对容器内的标准输入（STDIN）进行交互。
 */
