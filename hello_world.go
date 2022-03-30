@@ -30,4 +30,9 @@
 
 		注意第二行root@0123ce188bd8:/#，此时我们已进入一个ubuntu15.10系统的容器
 		我们尝试在容器中运行命令cat/proc/version和ls分别查看当前系统的版本信息和当前目录下的文件列表。
+			root@0123ce188bd8:/#  cat /proc/version
+			Linux version 4.4.0-151-generic (buildd@lgw01-amd64-043) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.10) ) #178-Ubuntu SMP Tue Jun 11 08:30:22 UTC 2019
+			root@0123ce188bd8:/# ls
+			bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+			root@0123ce188bd8:/# 
 */
