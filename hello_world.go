@@ -35,4 +35,9 @@
 			root@0123ce188bd8:/# ls
 			bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
 			root@0123ce188bd8:/# 
+
+		我们可以通过运行exit命令或者使用CTRL + D来退出容器。
+			root@0123ce188bd8:/#  exit
+			exit
+			root@runoob:~# 
 */
