@@ -41,4 +41,9 @@
 			exit
 			root@runoob:~# 
 		注意第三行中 root@runoob:~# 表明我们已经退出了当前的容器，返回到当前的主机中。
+
+	启动容器（后台模式）
+		使用以下命令创建一个进程方式运行的容器
+			runoob@runoob:~$ docker run -d ubuntu:15.10 /bin/sh -c "while true; do echo hello world; sleep 1; done"
+			2b1b7a428627c51ab8810d541d759f072b4fc75487eed05812646b8534a2fe63
 */
