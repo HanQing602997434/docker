@@ -40,4 +40,5 @@
 			root@0123ce188bd8:/#  exit
 			exit
 			root@runoob:~# 
+		注意第三行中 root@runoob:~# 表明我们已经退出了当前的容器，返回到当前的主机中。
 */
