@@ -46,4 +46,11 @@
 		使用以下命令创建一个进程方式运行的容器
 			runoob@runoob:~$ docker run -d ubuntu:15.10 /bin/sh -c "while true; do echo hello world; sleep 1; done"
 			2b1b7a428627c51ab8810d541d759f072b4fc75487eed05812646b8534a2fe63
+		在输出中，我们没有看到期望的"hello world"，而是一串长字符
+		2b1b7a428627c51ab8810d541d759f072b4fc75487eed05812646b8534a2fe63
+		这个长字符叫做容器ID，对每个容器来说都是唯一的，我们可以通过容器ID来查看对应的容器发生了什么。
+		首先，我们需要确认容器有在运行，可以通过docker ps来查看
+			runoob@runoob:~$ docker ps
+			CONTAINER ID        IMAGE                  COMMAND              ...  
+			5917eac21c36        ubuntu:15.10           "/bin/sh -c 'while t…"    ...
 */
