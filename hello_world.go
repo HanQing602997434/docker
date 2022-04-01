@@ -53,4 +53,10 @@
 			runoob@runoob:~$ docker ps
 			CONTAINER ID        IMAGE                  COMMAND              ...  
 			5917eac21c36        ubuntu:15.10           "/bin/sh -c 'while t…"    ...
+		输出详情介绍：
+			CONTAINER ID：容器ID。
+			IMAGE：使用的镜像。
+			COMMAND：启动容器时运行的命令。
+			CREATEED：容器创建的时间。
+			STATUS：容器状态。
 */
