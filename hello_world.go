@@ -67,4 +67,10 @@
 					paused（暂停）
 					existed（停止）
 					dead（死亡）
+			PORTS：容器的端口信息和使用的连接类型（tcp/udp）。
+			NAMES：自动分配的容器名称。
+			在宿主主机内使用docker logs命令，查看容器内的标准输出：
+				runoob@runoob:~$ docker logs 2b1b7a428627
+				
+				runoob@runoob:~$ docker logs amazing_cori
 */
