@@ -59,4 +59,12 @@
 			COMMAND：启动容器时运行的命令。
 			CREATEED：容器创建的时间。
 			STATUS：容器状态。
+				状态有7种：
+					created（已创建）
+					restarting（重启中）
+					running或Up（运行中）
+					removing（迁移中）
+					paused（暂停）
+					existed（停止）
+					dead（死亡）
 */
