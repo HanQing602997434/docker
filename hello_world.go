@@ -71,6 +71,16 @@
 			NAMES：自动分配的容器名称。
 			在宿主主机内使用docker logs命令，查看容器内的标准输出：
 				runoob@runoob:~$ docker logs 2b1b7a428627
-				
+
 				runoob@runoob:~$ docker logs amazing_cori
+
+	停止容器
+		我们使用docker stop 命令来停止容器
+
+		通过docker ps 查看，容器已经停止工作：
+			runoob@runoob:~$ docker ps
+		
+		可以看到容器已经不在了。
+		也可以用下面的命令来停止：
+			runoob@runoob:~$ docker stop amazing_cori
 */
