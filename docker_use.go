@@ -26,4 +26,11 @@
 
 			要退出终端，直接输入exit：
 				root@ed09e4490c57:/# exit
+
+		启动已停止运行的容器
+			查看所有的容器命令如下：
+				$ docker ps -a
+
+			使用docker start启动一个已停止的容器：
+				$ docker start b750bbbcfd88
 */
