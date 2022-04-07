@@ -50,4 +50,15 @@
 			在使用 -d 参数时，容器启动会进入后台。此时想要进入容器，可以通过以下指令进入：
 				docker attach
 				docker exec：推荐大家使用 docker exec 命令，因此此命令会退出容器终端，但不会导致容器的停止。
+
+			attach命令
+				$ docker attach 1e560fca3906
+
+				注意：如果从这个容器退出，会导致容器的停止。
+
+			exec命令
+				docker exec -it 243c32535da7 /bin/bash
+
+				注意：如果从这个容器退出，容器不会停止，这是为什么推荐大家使用 docker exec 的原因。
+				更多参数说明请使用 docker exec --help 命令查看。
 */
