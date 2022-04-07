@@ -33,4 +33,21 @@
 
 			使用docker start启动一个已停止的容器：
 				$ docker start b750bbbcfd88
+
+		后台运行
+			在大部分的场景下，我们希望docker的服务是在后台运行的，我们可以过 -d 指定容器的运行模式。
+				$ docker run -itd --name ubuntu-test ubuntu /bin/bash
+			注：加了 -d 参数默认不会进入容器，想要进入容器需要使用指令 docker exec。
+
+		停止一个容器
+			停止容器的命令如下：
+				$ docker stop <容器 ID>
+
+			停止的容器可以通过 docker restart 重启：
+				$ docker restart <容器 ID>
+
+		进入容器
+			在使用 -d 参数时，容器启动会进入后台。此时想要进入容器，可以通过以下指令进入：
+				docker attach
+				docker exec：推荐大家使用 docker exec 命令，因此此命令会退出容器终端，但不会导致容器的停止。
 */
