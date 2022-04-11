@@ -61,4 +61,19 @@
 
 				注意：如果从这个容器退出，容器不会停止，这是为什么推荐大家使用 docker exec 的原因。
 				更多参数说明请使用 docker exec --help 命令查看。
+
+	导出和导入容器
+		导出容器
+			如果要导出某个容器，可以使用 docker export 命令。
+				$ docker export 1e560fca3906 > ubuntu.tar
+
+			导出容器 1e560fca3906 快照到本地文件 ubuntu.tar。
+
+		导入文件快照
+			可以使用 docker import 从容器快照文件中再导入为镜像，以下实例将快照文件 ubuntu.tar
+			导入镜像 test/ubuntu:v1
+				$ cat docker/ubuntu.tar | docker import - test/ubuntu:v1
+
+			此外，也可以通过指定URL或者某个目录来导入，例如：
+				$ docker import http://example.com/exampleimage.tgz example/imagerepo
 */
