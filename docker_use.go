@@ -76,4 +76,11 @@
 
 			此外，也可以通过指定URL或者某个目录来导入，例如：
 				$ docker import http://example.com/exampleimage.tgz example/imagerepo
+
+	删除容器
+		删除容器使用 docker rm 命令：
+			$ docker rm -f 1e560fca3906
+
+		下面的命令可以清理掉所有处于终止状态的容器
+			$ docker container prune
 */
