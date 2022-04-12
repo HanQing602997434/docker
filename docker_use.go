@@ -91,5 +91,17 @@
 			runoob@runoob:~# docker pull training/webapp # 载入镜像
 			runoob@runoob:~# docker run -d -P training/webapp python app.py
 
-		
+		参数说明
+			-d:让容器在后台运行
+			-P:将容器内部使用的网络端口随机映射到我们使用的主机上。
+
+	查看web应用容器
+		使用 docker ps 来查看我们正在运行的容器：
+			runoob@runoob:~# docker ps
+			CONTAINER ID        IMAGE               COMMAND             ...        PORTS                 
+			d3d5e39ed9d3        training/webapp     "python app.py"     ...        0.0.0.0:32769->5000/tcp
+
+		这里多了端口信息。
+			PORTS
+			0.0.0.0:32769->5000/tcp
 */
