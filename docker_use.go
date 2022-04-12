@@ -83,4 +83,13 @@
 
 		下面的命令可以清理掉所有处于终止状态的容器
 			$ docker container prune
+
+	运行一个web应用
+		前面我们运行的容器并没有一些什么特别的用处。
+		接下来让我们尝试使用docker构建一个web应用程序。
+		我们将在docker容器中运行一个Python Flask应用来运行一个web应用。
+			runoob@runoob:~# docker pull training/webapp # 载入镜像
+			runoob@runoob:~# docker run -d -P training/webapp python app.py
+
+		
 */
