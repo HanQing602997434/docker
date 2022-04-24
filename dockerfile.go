@@ -96,4 +96,27 @@
 			类似于CMD指令，但其不会被docker run的命令行指定的指令覆盖，而且这些命令行参数会被当作参数送给ENTRYPOINT指令指定
 			的程序。
 			但是，如果运行docker run时使用了 --entrypoint选项，将覆盖ENTRYPOINT指令指定的程序。
+			优点：在执行docker run的时候可以指定ENTRYPOINT运行所需的参数。
+			注意：如果Dockerfile中如果存在多个ENTRYPOINT指令，仅最后一个生效。
+			格式：
+				ENTRYPOINT ["<executeable>","<param1>","<param2>",...]
+				可以搭配CMD命令使用：一般是变参才会使用CMD，这里的CMD等于是在给ENTRYPOINT传参，以下示例会提到。
+			示例：
+				假设已通过Dockerfile构建nginx:test镜像：
+					FROM nginx
+
+					ENTRYPOINT ["nginx","-c"] # 定参
+					CMD ["/etc/nginx/nginx.conf"] # 变参
+
+			1.不传参运行
+				$ docker run nginx:test
+
+				容器内会默认运行以下命令，启动主进程
+				nginx -c /etc/nginx/nginx.conf
+
+			2.传参运行
+				$ docker run nginx:test -c /etc/nginx/new.conf
+
+				容器会默认运行以下命令，启动主进程（/etc/nginx/new.conf，假设容器内有此文件）
+				nginx -c /etc/nginx/new.conf
 */
