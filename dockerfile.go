@@ -122,4 +122,14 @@
 
 		ENV
 			设置环境变量，定义环境变量，那么在后续的指令中，就可以使用这个环境变量。
+			格式：
+				ENV <key> <value>
+				ENV <key>=<value1> <key2>=<value2>...
+
+			以下示例设置NODE_VERSION = 7.2.0，在后续的指令中可以通过 $NODE_VERSION引用：
+				ENV NODE_VERSION 7.2.0
+
+				RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz" \
+  				&& curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"
+
 */
