@@ -130,6 +130,13 @@
 				ENV NODE_VERSION 7.2.0
 
 				RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz" \
-  				&& curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"
+				  && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"
+				  
+		ARG
+			构建参数，与ENV作用一致，不过作用域不一样。ARG设置的环境变量仅对Dockerfile内有效，也就是说只有docker build
+			的过程有效，构建好的镜像内不存在此环境变量。
+			构建命令docker build中可以用--build-arg<参数名>=<值>来覆盖。
+			格式：
+				ARG <参数名>[=<默认值>]
 
 */
