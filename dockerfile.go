@@ -171,4 +171,8 @@
 
 		HEALTHCEHCK
 			用于指定某个程序或者指令来监控docker容器服务的运行状态。
+			格式：
+				HEALTHCHECK [选项] CMD <命令>：设置检查容器健康状况的命令
+				HEALTHCHECK NONE：如果基础镜像有健康检查指令，使用这行可以屏蔽掉其健康检测指令
+				HEALTHCHECK [选项] CMD <命令>：这边CMD后面跟随的命令使用，可以参考CMD的用法。
 */
