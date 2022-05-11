@@ -182,4 +182,10 @@
 			时候，会执行test-build的Dockerfile里的ONBUILD指定的命令。
 			格式：
 				ONBUILD <其他指令>
+
+		LABEL
+			LABEL指令用来给镜像添加一些元数据（metadata），以键值对的形式，语法格式如下：
+				LABEL <key>=<value> <key>=<value> <key>=<value> ...
+			比如我们可以添加镜像的作者：
+				LABEL org.opencontainers.image.authors='runoob'
 */
