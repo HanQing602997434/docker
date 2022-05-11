@@ -175,4 +175,11 @@
 				HEALTHCHECK [选项] CMD <命令>：设置检查容器健康状况的命令
 				HEALTHCHECK NONE：如果基础镜像有健康检查指令，使用这行可以屏蔽掉其健康检测指令
 				HEALTHCHECK [选项] CMD <命令>：这边CMD后面跟随的命令使用，可以参考CMD的用法。
+
+		ONBUILD
+			用于延迟构建命令的执行。简单来说，就是Dockerfile里用ONBUILD指定的命令，在本次构建镜像的过程中不会执行（假设
+			镜像为test-build）。当有新的Dockerfile使用之前构建的镜像FROM test-build，这时执行新镜像的Dockerfile构建
+			时候，会执行test-build的Dockerfile里的ONBUILD指定的命令。
+			格式：
+				ONBUILD <其他指令>
 */
