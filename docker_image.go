@@ -29,4 +29,16 @@
 		当我们在本地主机上使用一个不存在的镜像时 Docker 就会自动下载这个镜像。如果我们预先下载
 		这个镜像，我们可以使用docker pull命令下载它。
 		下载完成后，我们可以直接使用这个镜像来运行容器。
+
+	查找镜像
+		我们可以从Docker Hub网站来搜索镜像，Docker Hub网站为：https://hub.docker.com/
+		我们也可以使用docker search命令来搜索镜像。比如我们需要一个httpd的镜像来作为我们
+		的web服务，我们可以通过docker search命令搜索httpd来寻找适合我们的镜像。
+			docker search httpd
+
+			NAME:镜像仓库源的名称
+			DESCRIPTION:镜像的描述
+			OFFICIAL:是否docker官方发布
+			stars:类似Github里面的star，表示点赞、喜欢的意思
+			AUTOMATED:自动构建
 */
