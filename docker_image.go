@@ -42,10 +42,19 @@
 			stars:类似Github里面的star，表示点赞、喜欢的意思
 			AUTOMATED:自动构建
 
-	拖取镜像
+	拉取镜像
 		我们决定使用上图中的httpd官方版本的镜像，使用命令docker pull来下载镜像
 			docker pull httpd
 
 		下载完成后，我们就可以使用这个镜像了
 			docker run httpd
+
+	删除镜像
+		镜像删除使用docker rmi命令，比如删除hello-world镜像
+			docker rmi hello-world
+
+	创建镜像
+		当我们从docker镜像仓库下载的镜像不能满足我们的需求时，我们可以通过以下两种方式对镜像进行修改
+			1.从已经创建的容器中更新镜像，并且提交这个镜像
+			2.使用Dockerfile指令来创建一个新的镜像
 */
