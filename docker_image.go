@@ -41,4 +41,11 @@
 			OFFICIAL:是否docker官方发布
 			stars:类似Github里面的star，表示点赞、喜欢的意思
 			AUTOMATED:自动构建
+
+	拖取镜像
+		我们决定使用上图中的httpd官方版本的镜像，使用命令docker pull来下载镜像
+			docker pull httpd
+
+		下载完成后，我们就可以使用这个镜像了
+			docker run httpd
 */
