@@ -65,4 +65,12 @@
 		在运行的容器内使用apt-get update命令进行更新。
 		在完成操作之后，输入exit命令来退出这个容器。
 		通过命令docker commit来提交容器副本。
+			docker commit -m="has update" -a="runoob" e218edb10161 runoob/ubuntu:v2
+			sha256:70bf1840fd7c0d2d8ef0a42a817eb29f854c1af8f7c59fc03ac7bdee9545aff8
+
+			各个参数说明：
+				-m:提交的描述信息
+				-a:指定镜像作者
+				e218edb10161:容器ID
+				runoob/ubuntu:v2:指定要创建的目标镜像名
 */
