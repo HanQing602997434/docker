@@ -96,6 +96,19 @@
 			CMD     /usr/sbin/sshd -D
 
 		每一个指令都会在镜像上创建一个新的层，每个指令的前缀都必须是大写的。
-		每一条FROM，指定使用哪个镜像源
-		
+		每一条FROM，指定使用哪个镜像源。
+		RUN指令告诉docker在镜像内执行命令，安装了什么。。。
+		然后，我们使用Dockerfile文件，通过docker build命令来构建一个镜像。
+			runoob@runoob:~$ docker build -t runoob/centos:6.7 .
+			Sending build context to Docker daemon 17.92 KB
+			Step 1 : FROM centos:6.7
+			 ---&gt; d95b5ca17cc3
+			Step 2 : MAINTAINER Fisher "fisher@sudops.com"
+			 ---&gt; Using cache
+			 ---&gt; 0c92299c6f03
+			Step 3 : RUN /bin/echo 'root:123456' |chpasswd
+			 ---&gt; Using cache
+			 ---&gt; 0397ce2fbd0a
+			Step 4 : RUN useradd runoob
+			......
 */
