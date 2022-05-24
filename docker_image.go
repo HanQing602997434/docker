@@ -79,4 +79,11 @@
 
 		使用我们的新镜像 runoob/ubuntu来启动一个容器
 			docker run -t -i runoob/ubuntu:v2 /bin/bash
+
+	构建镜像
+		我们使用命令docker build，从零开始来创建一个新的镜像。为此我们需要创建一个Dockerfile文件，
+		其中包含一组指令来告诉Docker如何构建我们的镜像。
+			cat Dockerfile
+
+		每一个指令都会在镜像上创建一个新的层，每个指令的前缀都必须是大写的。
 */
