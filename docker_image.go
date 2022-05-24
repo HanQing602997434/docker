@@ -73,4 +73,10 @@
 				-a:指定镜像作者
 				e218edb10161:容器ID
 				runoob/ubuntu:v2:指定要创建的目标镜像名
+
+		我们可以使用docker images命令来查看我们的新镜像 runoob/ubuntu:v2
+			docker images
+
+		使用我们的新镜像 runoob/ubuntu来启动一个容器
+			docker run -t -i runoob/ubuntu:v2 /bin/bash
 */
