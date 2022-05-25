@@ -111,4 +111,9 @@
 			 ---&gt; 0397ce2fbd0a
 			Step 4 : RUN useradd runoob
 			......
+
+		参数说明：
+			-t : 指定要创建的目标镜像名
+			. : Dockerfile文件所在目录，可以指定Dockerfile的绝对路径
+		使用docker images查看已经创建的镜像已经在列表中存在，镜像ID为860c279d2fec
 */
