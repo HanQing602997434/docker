@@ -116,4 +116,14 @@
 			-t : 指定要创建的目标镜像名
 			. : Dockerfile文件所在目录，可以指定Dockerfile的绝对路径
 		使用docker images查看已经创建的镜像已经在列表中存在，镜像ID为860c279d2fec
+
+		可以使用新的镜像来创建容器
+			docker run -t -i runoob/centos:6.7 /bin/bash
+			[root@41c28d18b5fb /]# id runoob
+			uid=500(runoob) gid=500(runoob) groups=500(runoob)
+		从上面看到新镜像已经包含我们创建的用户runoob
+
+	设置镜像标签
+		我们可以使用docker tag命令，为镜像添加一个新的标签。
+			docker tag 860c279d2fec runoob/centos:dev
 */
