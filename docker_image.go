@@ -126,4 +126,8 @@
 	设置镜像标签
 		我们可以使用docker tag命令，为镜像添加一个新的标签。
 			docker tag 860c279d2fec runoob/centos:dev
+
+		docker tag 镜像ID，这里是860c279d2fec，用户名称、镜像源名(responsitory name)
+		和新的签名(tag)。
+		使用docker images命令可以看到，ID为860c279d2fec的镜像多了一个标签
 */
