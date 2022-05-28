@@ -130,4 +130,18 @@
 		docker tag 镜像ID，这里是860c279d2fec，用户名称、镜像源名(responsitory name)
 		和新的签名(tag)。
 		使用docker images命令可以看到，ID为860c279d2fec的镜像多了一个标签
+			runoob@runoob:~$ docker images
+			REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+			runoob/centos       6.7                 860c279d2fec        5 hours ago         190.6 MB
+			runoob/centos       dev                 860c279d2fec        5 hours ago         190.6 MB
+			runoob/ubuntu       v2                  70bf1840fd7c        22 hours ago        158.5 MB
+			ubuntu              14.04               90d5884b1ee0        6 days ago          188 MB
+			php                 5.6                 f40e9e0f10c8        10 days ago         444.8 MB
+			nginx               latest              6f8d099c3adc        13 days ago         182.7 MB
+			mysql               5.6                 f2e8d6c772c0        3 weeks ago         324.6 MB
+			httpd               latest              02ef73cf1bc0        3 weeks ago         194.4 MB
+			ubuntu              15.10               4e3b13c8a266        5 weeks ago         136.3 MB
+			hello-world         latest              690ed74de00f        6 months ago        960 B
+			centos              6.7                 d95b5ca17cc3        6 months ago        190.6 MB
+			training/webapp     latest              6fae60ef3446        12 months ago       348.8 MB
 */
