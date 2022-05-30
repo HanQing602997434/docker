@@ -13,4 +13,10 @@
 
 		另外，我们可以指定容器绑定的网络地址，比如绑定127.0.0.1。
 		我们使用-P绑定端口号，使用docker ps可以看到容器端口5000绑定主机端口32768.
+			runoob@runoob:~$ docker ps
+			CONTAINER ID    IMAGE               COMMAND            ...           PORTS                     NAMES
+			fce072cc88ce    training/webapp     "python app.py"    ...     0.0.0.0:32768->5000/tcp   grave_hopper
+
+		我们也可以使用-p标识来指定容器端口绑定到主机端口。
+		
 */
