@@ -21,4 +21,16 @@
 		两种方式的区别是：
 			-P:是容器内部端口随机映射到主机的端口。
 			-p:是容器内部端口绑定到指定的主机端口。
+
+			runoob@runoob:~$ docker run -d -p 5000:5000 training/webapp python app.py
+			33e4523d30aaf0258915c368e66e03b49535de0ef20317d3f639d40222ba6bc0
+
+		另外，我们可以指定容器绑定的网络地址，比如绑定127.0.0.1。
+			runoob@runoob:~$ docker run -d -p 127.0.0.1:5001:5000 training/webapp python app.py
+			95c6ceef88ca3e71eaf303c2833fd6701d8d1b2572b5613b5a932dfdfe8a857c
+			runoob@runoob:~$ docker ps
+			CONTAINER ID        IMAGE               COMMAND           ...     PORTS                                NAMES
+			95c6ceef88ca        training/webapp     "python app.py"   ...  5000/tcp, 127.0.0.1:5001->5000/tcp   adoring_stonebraker
+			33e4523d30aa        training/webapp     "python app.py"   ...  0.0.0.0:5000->5000/tcp               berserk_bartik
+			fce072cc88ce        training/webapp     "python app.py"   ...    0.0.0.0:32768->5000/tcp              grave_hopper
 */
