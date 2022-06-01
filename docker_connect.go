@@ -53,4 +53,9 @@
 			端口映射并不是唯一把docker连接到另一个容器的方法。
 			docker有一个连接系统允许将多个容器连接在一起，共享连接信息。
 			docker连接会创建一个父子关系，其中父容器可以看到子容器的信息。
+
+		容器命名
+			当我们创建一个容器的时候，docker会自动对它进行命名。另外，我们也可以使用--name标识来命名容器，例如：
+				runoob@runoob:~$ docker run -d -P --name runoob training/webapp python app.py
+				43780a6eabaaf14e590b6e849235c75f3012995403f97749775e38436db9a441
 */
