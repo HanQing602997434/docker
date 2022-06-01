@@ -44,4 +44,13 @@
 			95c6ceef88ca        training/webapp     "python app.py"   ...    5000/tcp, 127.0.0.1:5001->5000/tcp   adoring_stonebraker
 			33e4523d30aa        training/webapp     "python app.py"   ...     0.0.0.0:5000->5000/tcp               berserk_bartik
 			fce072cc88ce        training/webapp     "python app.py"   ...    0.0.0.0:32768->5000/tcp              grave_hopper
+
+		docker port命令可以让我们快捷地查看端口的绑定情况。
+			runoob@runoob:~$ docker port adoring_stonebrake 5000
+			127.0.0.1：5001
+
+		Docker容器互联
+			端口映射并不是唯一把docker连接到另一个容器的方法。
+			docker有一个连接系统允许将多个容器连接在一起，共享连接信息。
+			docker连接会创建一个父子关系，其中父容器可以看到子容器的信息。
 */
