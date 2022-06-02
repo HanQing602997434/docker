@@ -71,4 +71,8 @@
 		参数说明：
 			-d: 参数指定Docker网络类型，有bridge、overlay。
 			其中overlay网络类型用于Swarm mode。
+
+		连接容器
+			运行一个容器并连接到新建的test-net网络：
+				$ docker run -itd --name test-net ubuntu /bin/bash
 */
