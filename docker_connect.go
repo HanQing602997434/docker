@@ -58,4 +58,9 @@
 			当我们创建一个容器的时候，docker会自动对它进行命名。另外，我们也可以使用--name标识来命名容器，例如：
 				runoob@runoob:~$ docker run -d -P --name runoob training/webapp python app.py
 				43780a6eabaaf14e590b6e849235c75f3012995403f97749775e38436db9a441
+
+			我们可以使用docker ps命令来查看容器名称。
+				runoob@runoob:~$ docker ps -l
+				CONTAINER ID     IMAGE            COMMAND           ...    PORTS                     NAMES
+				43780a6eabaa     training/webapp   "python app.py"  ...     0.0.0.0:32769->5000/tcp   runoob
 */
