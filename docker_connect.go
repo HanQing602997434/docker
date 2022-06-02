@@ -74,5 +74,10 @@
 
 		连接容器
 			运行一个容器并连接到新建的test-net网络：
-				$ docker run -itd --name test-net ubuntu /bin/bash
+				$ docker run -itd --name test1 test-net ubuntu /bin/bash
+
+			打开新的终端，再运行一个容器并加入到test-net网络：
+				$ docker run -itd --name test2 test-net ubuntu /bin/bash
+
+			通过ping可以证明test1和test2容器建立了互联关系。
 */
