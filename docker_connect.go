@@ -63,4 +63,12 @@
 				runoob@runoob:~$ docker ps -l
 				CONTAINER ID     IMAGE            COMMAND           ...    PORTS                     NAMES
 				43780a6eabaa     training/webapp   "python app.py"  ...     0.0.0.0:32769->5000/tcp   runoob
+
+	新建网络
+		下面先新建一个新的Docker网络
+		$ docker network create -d bridge test-net
+		
+		参数说明：
+			-d: 参数指定Docker网络类型，有bridge、overlay。
+			其中overlay网络类型用于Swarm mode。
 */
