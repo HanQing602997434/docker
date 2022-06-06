@@ -80,4 +80,13 @@
 				$ docker run -itd --name test2 test-net ubuntu /bin/bash
 
 			通过ping可以证明test1和test2容器建立了互联关系。
+
+	配置DNS
+		可以在宿主机的/etc/docker/daemon.json文件中增加以下内容来设置全部容器的DNS：
+		{
+			"dns" : [
+				"114.114.114.114",
+				"8.8.8.8"
+			]
+		}
 */
