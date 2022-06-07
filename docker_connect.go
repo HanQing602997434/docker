@@ -93,4 +93,8 @@
 		配置完成，需要重启docker才能生效。
 		查看容器的DNS是否生效可以使用以下命令，它会输出容器的DNS信息：
 		$ docker run -it --rm ubuntu cat etc/resolv.conf
+
+		手动指定容器的配置
+		如果只想在指定的容器设置DNS，则可以使用以下命令：
+			$ docker run -it --rm -h host_ubuntu --dns=114.114.114.114 --dns-search=test.com ubuntu
 */
