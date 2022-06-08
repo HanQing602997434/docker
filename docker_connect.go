@@ -97,4 +97,8 @@
 		手动指定容器的配置
 		如果只想在指定的容器设置DNS，则可以使用以下命令：
 			$ docker run -it --rm -h host_ubuntu --dns=114.114.114.114 --dns-search=test.com ubuntu
+
+		参数说明：
+			--rm：容器退出时自动清理容器内部的文件系统。
+			-h HOSTNAME 或者 --hostname=HOSTNAME: 
 */
