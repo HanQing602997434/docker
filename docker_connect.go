@@ -100,5 +100,6 @@
 
 		参数说明：
 			--rm：容器退出时自动清理容器内部的文件系统。
-			-h HOSTNAME 或者 --hostname=HOSTNAME: 
+			-h HOSTNAME 或者 --hostname=HOSTNAME: 设定容器的主机名，他会被写到容器内的/etc/hostname 和 /etchosts。
+			
 */
