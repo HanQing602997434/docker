@@ -101,5 +101,5 @@
 		参数说明：
 			--rm：容器退出时自动清理容器内部的文件系统。
 			-h HOSTNAME 或者 --hostname=HOSTNAME: 设定容器的主机名，他会被写到容器内的/etc/hostname 和 /etchosts。
-			
+			--dns=IP_ADDRESS：添加DNS服务器到容器的/etc/resolv.conf中，让容器用这个服务器来解析所有不在/etc/hosts中的主机名
 */
