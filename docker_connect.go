@@ -104,4 +104,5 @@
 			--dns=IP_ADDRESS：添加DNS服务器到容器的/etc/resolv.conf中，让容器用这个服务器来解析所有不在/etc/hosts中的主机名
 			--dns-serach=DOMAIN：设定容器的搜索域，当设定搜索域为.example.com时，在搜索一个名为host的主机时，DNS不仅
 			搜索host，还会搜索host.example.com。
+			如果在容器启动时没有指定--dns 和 --dns-search，Docker会默认为宿主主机上的/etc/resolv.conf来配置容器的DNS。
 */
